@@ -18,5 +18,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bciproject/', include('django.contrib.auth.urls')),
     path('bci/',include('bci.urls'))
 ]
