@@ -82,6 +82,7 @@
             bottom:5%;
             right:35%;
             
+            
         }
     </style>
  
@@ -96,7 +97,10 @@
 <body>
 	<div class="sidenav">
 		
+		<a href="{% url 'home' %}">Dashboard </a>
 		<a href="{% url 'training' %}">Training </a>
+        <a href="{% url 'testing' %}">Testing </a>
+        <a href="{% url 'results' %}">Results </a>
        
 	</div>
  
@@ -110,9 +114,6 @@
 			</div>
 		</div>
 	</div>
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" width="640" height="480" src="https://youtu.be/hlWiI4xVXKY" frameborder="0" allowfullscreen></iframe>
-    </div>
     <!--<video class="vid" autoplay loop>
     <source src="video1.mp4" type='video/mp4' />
     </video>
@@ -124,9 +125,9 @@
         </center>
     </div>-->
     <div class="buttons">
-        <button type="button" onclick="location.href = 'https://youtu.be/hlWiI4xVXKY' ;">Relaxed</button>
-        <button type="button">Concentrated</button>
-        <button type="button">Stress</button>
+        <input type="button" onclick="location.href = 'https://youtu.be/hlWiI4xVXKY' ;" value="Relaxed" />
+        <input type="button" value="Concentrated"/>
+        <input type="button" value="Stress"/>
     </div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
