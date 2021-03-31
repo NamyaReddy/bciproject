@@ -9,3 +9,11 @@ from django.utils.cache import add_never_cache_headers
 
 def home(request):
     return render(request,'home.html')
+
+
+
+def training(request):
+    return render(request,'training.html')
+
+
+    

@@ -15,21 +15,30 @@
 }
 </style>
 <body align="center">
-  
+{% block content %}    
   <div >
-    <form id="form_login">
+    <form id="form_login" method="POST">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Log In</button>
       <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-      <p>
+  
+      <!--<p>
           <input type="text" id="username" placeholder="username" />
       </p>
       <p>
@@ -38,8 +47,9 @@
       
       <p>
           <button id="submitbutton" type="button">Submit</button>
-      </p>
+      </p>-->
     </form>
   </div>
+  {% endblock content %}
 </body>
 </html>
