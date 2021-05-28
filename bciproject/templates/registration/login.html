@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	#form_login {
+  background-image: url("https://blog.ansi.org/wp-content/uploads/2017/09/iStock_000044640572_Small_849x565-72dpi-1.jpg");
+  background-color: #cccccc;
+  height: 750px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+<body align="center">
+{% block content %}    
+  <div >
+    <form id="form_login" method="POST">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Log In</button>
+      <br/>
+  
+      <!--<p>
+          <input type="text" id="username" placeholder="username" />
+      </p>
+      <p>
+          <input type="password" id="password" placeholder="password" />
+      </p>
+      
+      <p>
+          <button id="submitbutton" type="button">Submit</button>
+      </p>-->
+    </form>
+  </div>
+  {% endblock content %}
+</body>
+</html>
